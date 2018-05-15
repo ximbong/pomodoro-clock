@@ -1,0 +1,98 @@
+@-webkit-keyframes AnimationSession {
+  0% {background-position: 5% 0%;}
+  50% {background-position: 96% 100%;}
+  100% {background-position: 5% 0%;}
+}
+@-webkit-keyframes AnimationName {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+body {
+margin-top: 35px;
+background: -moz-radial-gradient(center, ellipse cover, #7de2e8 0%, #7f90a3 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #7de2e8 0%,#7f90a3 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #7de2e8 0%,#7f90a3 100%);
+background-size:400% 400%;
+}
+
+.name {
+  font-family: Lobster;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.breakAnimation {
+  background: linear-gradient(273deg, #96d274, #338e00);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
+}
+
+.square {
+  height: 0%;
+  width: 300px;
+}
+
+.sessionAnimation {
+  background: linear-gradient(91deg, #df0000, #c57324);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationSession 5s ease infinite;
+  animation: AnimationSession 5s ease infinite;
+}
+
+.circle {
+  position: relative;
+  left: -50%;
+  width: 298px;
+  height: 298px;
+  border-radius: 50%;
+  border: 1px solid black;
+  overflow: hidden;
+  cursor: pointer;
+  color: white;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.timer {
+  position: relative;
+  text-align: center;
+  left: -50%;
+  font-family: Sansita;
+}
+
+#timer {
+  font-size: 50px;
+}
+
+.reset {
+  font-size: 40px;
+}
+
+.header {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.tag {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.session {
+  color: #b30000;
+}
+
+.break {
+  color: #004d1a;
+}
